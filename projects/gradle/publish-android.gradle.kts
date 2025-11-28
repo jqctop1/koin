@@ -38,3 +38,4 @@ configure<PublishingExtension> {
 
 
 apply(from = file("../../gradle/signing.gradle.kts"))
+apply(from = file("../../gradle/publish.gradle"))
