@@ -8,7 +8,7 @@ plugins {
 }
 
 kotlin {
-    jvmToolchain(1_8)
+    jvmToolchain(17)
     jvm {
         withJava()
     }

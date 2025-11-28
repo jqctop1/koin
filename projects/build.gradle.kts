@@ -5,7 +5,7 @@ plugins {
     alias(libs.plugins.kotlinAndroid).apply(false)
     alias(libs.plugins.dokka).apply(false)
     alias(libs.plugins.compose.compiler) apply false
-    alias(libs.plugins.kotlinBinary)
+    //alias(libs.plugins.kotlinBinary)
     alias(libs.plugins.nexusPublish)
 }
 

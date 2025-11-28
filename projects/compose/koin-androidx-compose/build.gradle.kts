@@ -17,7 +17,7 @@ android {
     namespace = "org.koin.androidx.compose"
     compileSdk = androidCompileSDK.toInt()
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8.toString()
+        jvmTarget = JavaVersion.VERSION_17.toString()
     }
     defaultConfig {
         minSdk = androidMinSDK.toInt()
@@ -27,14 +27,14 @@ android {
         compose = true
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
 
 tasks.withType<KotlinCompile>().all {
     compilerOptions {
-        jvmTarget.set(JvmTarget.JVM_1_8)
+        jvmTarget.set(JvmTarget.JVM_17)
     }
 }
 

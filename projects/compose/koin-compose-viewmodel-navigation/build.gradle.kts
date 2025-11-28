@@ -12,27 +12,27 @@ val koinVersion: String by project
 version = koinVersion
 
 kotlin {
-    jvmToolchain(1_8)
-    jvm {
+    jvmToolchain(17)
+    /*jvm {
         withJava()
-    }
+    }*/
 
-    js(IR) {
+    /*js(IR) {
         nodejs()
         browser()
         binaries.executable()
-    }
+    }*/
 
-    wasmJs {
+    /*wasmJs {
         nodejs()
         binaries.executable()
-    }
+    }*/
 
     iosX64()
-    iosArm64()
-    iosSimulatorArm64()
-    macosX64()
-    macosArm64()
+    //iosArm64()
+    //iosSimulatorArm64()
+    //macosX64()
+    //macosArm64()
 
     sourceSets {
         commonMain.dependencies {
@@ -45,7 +45,7 @@ kotlin {
 
 tasks.withType<KotlinCompile>().all {
     compilerOptions {
-        jvmTarget.set(JvmTarget.JVM_1_8)
+        jvmTarget.set(JvmTarget.JVM_17)
     }
 }
 

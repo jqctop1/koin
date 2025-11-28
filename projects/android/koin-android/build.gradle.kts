@@ -19,14 +19,14 @@ android {
         buildConfig = false
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
 
 tasks.withType<KotlinCompile>().all {
     compilerOptions {
-        jvmTarget.set(JvmTarget.JVM_1_8)
+        jvmTarget.set(JvmTarget.JVM_17)
     }
 }
 
@@ -40,12 +40,12 @@ dependencies {
     api(libs.androidx.commonJava8)
 
     // tests
-    testImplementation(project(":core:koin-test"))
-    testImplementation(project(":core:koin-test-junit4"))
-    testImplementation(libs.kotlin.test)
-    testImplementation(libs.test.junit)
-    testImplementation(libs.test.mockito)
-    testImplementation(libs.test.mockk)
+    //testImplementation(project(":core:koin-test"))
+    //testImplementation(project(":core:koin-test-junit4"))
+    //testImplementation(libs.kotlin.test)
+    //testImplementation(libs.test.junit)
+    //testImplementation(libs.test.mockito)
+    //testImplementation(libs.test.mockk)
 }
 
 // android sources

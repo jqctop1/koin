@@ -6,39 +6,41 @@ plugins {
 }
 
 kotlin {
-    jvmToolchain(1_8)
+    jvmToolchain(17)
 
     jvm {
         withJava()
     }
 
-    js(IR) {
+    /*js(IR) {
         nodejs()
         browser()
         binaries.executable()
-    }
+    }*/
 
-    wasmJs {
+    /*wasmJs {
         nodejs()
         binaries.executable()
-    }
+    }*/
 
-    iosX64()
-    iosArm64()
-    iosSimulatorArm64()
-    macosX64()
-    macosArm64()
-    watchosArm32()
-    watchosArm64()
-    watchosDeviceArm64()
-    watchosSimulatorArm64()
-    watchosX64()
-    tvosArm64()
-    tvosSimulatorArm64()
-    tvosX64()
-    mingwX64()
-    linuxX64()
-    linuxArm64()
+    //iosX64()
+    //iosArm64()
+    //iosSimulatorArm64()
+    //macosX64()
+    //macosArm64()
+    //watchosArm32()
+    //watchosArm64()
+    //watchosDeviceArm64()
+    //watchosSimulatorArm64()
+    //watchosX64()
+    //tvosArm64()
+    //tvosSimulatorArm64()
+    //tvosX64()
+    //mingwX64()
+    //linuxX64()
+    //linuxArm64()
+
+    ohosArm64()
 
     sourceSets {
         commonMain.dependencies {
@@ -46,20 +48,20 @@ kotlin {
             implementation(libs.extras.stately.collections)
 //            api(libs.extras.uuid)
         }
-        commonTest.dependencies {
+        /*commonTest.dependencies {
             implementation(libs.kotlin.test)
             implementation(libs.test.coroutines)
         }
         wasmJsMain.dependencies {
             implementation(libs.uuid)
-        }
+        }*/
     }
 }
 
 
 tasks.withType<KotlinCompile>().all {
     compilerOptions {
-            jvmTarget.set(JvmTarget.JVM_1_8)
+            jvmTarget.set(JvmTarget.JVM_17)
         }
 }
 

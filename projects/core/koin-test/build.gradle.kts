@@ -7,7 +7,7 @@ plugins {
 }
 
 kotlin {
-    jvmToolchain(1_8)
+    jvmToolchain(17)
     jvm {
         withJava()
     }
@@ -56,7 +56,7 @@ kotlin {
 
 tasks.withType<KotlinCompile>().all {
     compilerOptions {
-            jvmTarget.set(JvmTarget.JVM_1_8)
+            jvmTarget.set(JvmTarget.JVM_17)
         }
 }
 

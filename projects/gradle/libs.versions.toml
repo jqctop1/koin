@@ -3,10 +3,10 @@
 # /!\ Koin in gradle.properties /!\
 
 # Core
-kotlin = "2.0.21"
+kotlin = "2.0.21-KBA-009"
 binaryValidator = "0.16.0"
 publish = "2.0.0"
-coroutines = "1.8.1"
+coroutines = "1.8.0-KBA-002"
 dokka = "1.9.20"
 uuid = "0.8.4"
 
@@ -22,14 +22,14 @@ androidx-startup= "1.2.0"
 
 # Compose
 composeJetpackRuntime = "1.6.8"
-composeJB = "1.6.11"
+composeJB = "1.6.1-KBA-007"
 composeLifecycle = "2.8.3"
 composeNavigation = "2.8.0-alpha10" # 2.8.0-alpha02 to keep compose 1.6.11
 jbCoreBundle = "1.0.1"
 jbSavedState = "1.2.2"
 
 # Test
-stately = "2.1.0"
+stately = "2.1.0-KBA"
 junit = "4.13.2"
 jupiter = "5.9.3"
 mockito = "4.8.0"

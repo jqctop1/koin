@@ -18,12 +18,12 @@ dependencies {
 
 tasks.withType<KotlinCompile>().all {
     compilerOptions {
-        jvmTarget.set(JvmTarget.JVM_1_8)
+        jvmTarget.set(JvmTarget.JVM_17)
     }
 }
 java {
-    sourceCompatibility = JavaVersion.VERSION_1_8 // or the desired Java version
-    targetCompatibility = JavaVersion.VERSION_1_8 // or the desired Java version
+    sourceCompatibility = JavaVersion.VERSION_11 // or the desired Java version
+    targetCompatibility = JavaVersion.VERSION_17 // or the desired Java version
 }
 val sourcesJar: TaskProvider<Jar> by tasks.registering(Jar::class) {
     archiveClassifier.set("sources")

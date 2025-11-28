@@ -6,7 +6,7 @@ plugins {
 }
 
 kotlin {
-    jvmToolchain(1_8)
+    jvmToolchain(17)
     jvm {
         withJava()
     }
@@ -16,15 +16,15 @@ kotlin {
             api(project(":core:koin-fu"))
             api(project(":core:koin-core-viewmodel"))
         }
-        jvmTest.dependencies {
+        /*jvmTest.dependencies {
             implementation(libs.kotlin.test)
-        }
+        }*/
     }
 }
 
 tasks.withType<KotlinCompile>().all {
     compilerOptions {
-            jvmTarget.set(JvmTarget.JVM_1_8)
+            jvmTarget.set(JvmTarget.JVM_17)
         }
 }
 
